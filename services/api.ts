@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'; // Use a URL da variável de ambiente ou uma URL padrão para desenvolvimento
 
 interface Item {
     id: number;
